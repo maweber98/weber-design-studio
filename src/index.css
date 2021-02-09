@@ -1,6 +1,6 @@
 body {
   margin: 5% 5% 5% 5%;
-  background-color: #F30267;
+  /* background-color: #F30267 !important; */
   font-family: 'Abril Fatface', cursive;  font-size: large;
   color: #02075D;
 }
@@ -12,8 +12,17 @@ body {
   padding-top: 15%;
 }
 
+.portfolioLinks {
+  font-size: 30px;
+  font-family: 'Abril Fatface', cursive;
+  color: #02075D;
+  padding-top: 30px;
+}
+
 .logo {
   align-self: start;
+  font-size: 16px;
+  width: 10em;
 }
 
 .portfolioButton {
@@ -22,9 +31,18 @@ body {
   margin-top: 30px;
 }
 
+.portfolioWrapper {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  /* grid-template-columns: repeat(auto-fill, minmax(425px, 1fr)); */
+  column-gap: 10px;
+  color: #02075D;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  /* background-color: #F30267 !important; */
   /* grid-auto-rows: 200px; */
   column-gap: 10px;
 }
