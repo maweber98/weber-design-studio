@@ -8,6 +8,10 @@ import FocusLock from 'react-focus-lock';
 import {Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
 import expensifyApp from './images/expensifyApp.jpg'
+import memeApp from './images/memeGeneratorApp.jpg'
+import guitarChordApp from './images/guitarChordApp.jpg'
+import officeApp from './images/officeApp.jpg'
+import videoSearchApp from './images/videoSearchApp.jpg'
 
 const Portfolio = () => {
     const [open, setOpen] = useState(false);
@@ -21,7 +25,7 @@ const Portfolio = () => {
         <>
     
           <PortfolioStyles />
-          <div className="portfolioWrapper">
+          <div className="portfolioHeader">
             <div className="logo">
                 <Link to="/">
                     <img src={logo} alt="Weber Design Logo" height={"75%"} width={"75%"} />
@@ -34,34 +38,36 @@ const Portfolio = () => {
               <Menu open={open} setOpen={setOpen} id={menuId} />
             </FocusLock>
             </div>
+            </div>
+            <div className="portfolioWrapper">
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={expensifyApp} alt="guitar chord app" height={"50%"} width={"50%"} />
+                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
                 </a>
             </div>
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://react-expensify20.herokuapp.com/dashboard' target="_blank">
-                    <img src={expensifyApp} alt="expensify app" height={"50%"} width={"50%"} />
+                    <img src={expensifyApp} alt="expensify app" width={"100%"} />
                 </a>
             </div>
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://meme-generator20.herokuapp.com/' target="_blank">
-                    <img src={expensifyApp} alt="meme app" height={"50%"} width={"50%"} />
+                    <img src={memeApp} alt="meme app" width={"100%"} />
                 </a>
             </div>
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://react-indecision20.herokuapp.com/' target="_blank">
-                    <img src={expensifyApp} alt="indecision app" height={"50%"} width={"50%"} />
+                    <img src={expensifyApp} alt="indecision app" width={"100%"} />
                 </a>
             </div>
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://react-office-app21.herokuapp.com/' target="_blank">
-                    <img src={expensifyApp} alt="office quiz app" height={"50%"} width={"50%"} />
+                    <img src={officeApp} alt="office quiz app" width={"100%"} />
                 </a>
             </div>
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://video-search-app20.herokuapp.com/' target="_blank">
-                    <img src={expensifyApp} alt="youtube video search app" height={"50%"} width={"50%"} />
+                    <img src={videoSearchApp} alt="youtube video search app" width={"100%"} />
                 </a>
             </div>
         </div>

@@ -39,6 +39,13 @@ body {
   color: #02075D;
 }
 
+.portfolioHeader {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  column-gap: 10px;
+  color: #02075D;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 20% 60% 20%;
