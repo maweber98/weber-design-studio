@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link } from "react-router-dom";
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 
@@ -9,18 +10,30 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="/" tabIndex={tabIndex}>
+      <Link to="/aboutme" tabIndex={tabIndex}>
+      {/* <a href="/" tabIndex={tabIndex}> */}
         <span aria-hidden="true"></span>
         About Me
+      {/* </a> */}
+      </Link>
+      <Link to="/quotes" tabIndex={tabIndex}>
+      {/* <a href="/quotes" tabIndex={tabIndex}> */}
+        <span aria-hidden="true"></span>
+        Inspiration
+      {/* </a> */}
+      </Link>
+      {/* <Link to="/contact" tabIndex={tabIndex}> */}
+      <a href="mailto:weberdesignstudio@gmail.com" tabIndex={tabIndex}>
+        <span aria-hidden="true"></span>
+        Contact Me
       </a>
-      <a href="/" tabIndex={tabIndex}>
+      {/* </Link> */}
+      <Link to="/" tabIndex={tabIndex}>
+      {/* <a href="/" tabIndex={tabIndex}> */}
         <span aria-hidden="true"></span>
-        Blog
-        </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true"></span>
-        Contact
-        </a>
+        Home
+      {/* </a> */}
+      </Link>
     </StyledMenu>
   )
 }

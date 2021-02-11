@@ -24,7 +24,7 @@ const App = () => {
       <div className="wrapper">
         <div className="logo">
           <Link to="/">
-            <img src={logo} alt="Weber Design" height={"75%"} width={"75%"} />
+            <img src={logo} alt="Weber Design" height={"100%"} width={"100%"} />
           </Link>
         </div>
         <div></div>

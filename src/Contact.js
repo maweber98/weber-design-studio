@@ -14,7 +14,7 @@ import officeApp from './images/officeApp.jpg'
 import videoSearchApp from './images/videoSearchApp.jpg'
 import indecisionApp from './images/indecisionApp.jpg'
 
-const Portfolio = () => {
+const Contact = () => {
     const [open, setOpen] = useState(false);
     const node = useRef();
     const menuId = "main-menu";
@@ -42,6 +42,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolioWrapper">
             <div className="portfolioLinks">
+                Contact
                 <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
                     <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
                 </a>
@@ -78,4 +79,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Contact
