@@ -5,7 +5,7 @@ import { PortfolioStyles } from './portfolioTheme';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
 import computerCoffee from './images/computerCoffee.jpg'
 

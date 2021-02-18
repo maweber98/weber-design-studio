@@ -17,6 +17,12 @@ export const StyledBurger = styled.button`
   padding: 0;
   z-index: 10;
 
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+    }
+
   span {
     width: 2rem;
     height: 0.25rem;
