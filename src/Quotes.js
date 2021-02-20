@@ -35,15 +35,15 @@ const Quotes = () => {
             </FocusLock>
             </div>
             </div>
-            <div className="aboutMeWrapper">
-            <div className="aboutMeContent">
+            <div className="quoteWrapper">
+            <div className="quoteContent">
             </div>
-            <div className="aboutMeContent">
+            <div className="quoteContent">
             </div>
             <div>
-                <img src={treePath} style={{objectFit: "contain"}} width="100%" height="100%" alt="coffee and computer"/>
+                <img src={treePath} style={{opacity:  0.3, objectFit: "contain", position:"relative", zIndex:"-1"}} width="100%" height="100%" alt="trees"/>
             </div>
-            <div className="aboutMeBio" style={{backgroundColor: "white"}}>
+            <div className="quoteText">
                 <h2>Quote of the day</h2>
                 <p>“Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe</p>
             </div>
