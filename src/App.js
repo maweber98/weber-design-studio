@@ -35,7 +35,7 @@ const App = () => {
         </FocusLock>
         </div>
         <div></div>
-        <div className="introText">Hello! I’m Mark Weber, a design oriented front end web developer. I strive to develop well thought out elegent web applications with clean well crafted code.</div>
+        <div className="introText">Hello! I’m Mark Weber, a design oriented front end web developer. I strive to develop well thought out elegant web applications with clean well crafted code.</div>
         <div></div>
         <div></div>
         <div className="portfolioButton">
