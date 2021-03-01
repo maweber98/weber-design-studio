@@ -13,6 +13,7 @@ import guitarChordApp from './images/guitarChordApp.jpg'
 import officeApp from './images/officeApp.jpg'
 import videoSearchApp from './images/videoSearchApp.jpg'
 import indecisionApp from './images/indecisionApp.jpg'
+import typingApp from './images/typingGame.jpg'
 
 const Portfolio = () => {
     const [open, setOpen] = useState(false);
@@ -69,6 +70,11 @@ const Portfolio = () => {
             <div className="portfolioLinks">
                 <a rel="noopener noreferrer" href='https://video-kirch-ff2aa5.netlify.app/' target="_blank">
                     <img src={videoSearchApp} alt="youtube video search app" width={"100%"} />
+                </a>
+            </div>
+            <div className="portfolioLinks">
+                <a rel="noopener noreferrer" href='https://elastic-spence-eb117e.netlify.app/' target="_blank">
+                    <img src={typingApp} alt="Typing Game app" width={"100%"} />
                 </a>
             </div>
         </div>
