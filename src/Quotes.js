@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useOnClickOutside } from './hooks';
 import { PortfolioStyles } from './portfolioTheme';
@@ -8,13 +8,35 @@ import FocusLock from 'react-focus-lock';
 import {Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
 import treePath from './images/treePath.jpg'
+import axios from "axios";
 
 const Quotes = () => {
     const [open, setOpen] = useState(false);
     const node = useRef();
     const menuId = "main-menu";
-  
+    const [quote, setQuote] = useState("");
+    const [author, setAuthor] = useState("");
+   
     useOnClickOutside(node, () => setOpen(false));
+
+  useEffect(() => {
+    const options = {
+      method: 'GET',
+      url: 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote',
+      params: {token: 'ipworld.info'},
+      headers: {
+        'x-rapidapi-key': 'c41bf5f445msh17c9e5411b15303p1eca01jsn924505c55214',
+        'x-rapidapi-host': 'quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com'
+      }
+    };
+    
+    axios.request(options).then(function (response) {
+      console.log(response.data);
+    }).catch(function (error) {
+      console.error(error);
+    });
+
+  },[]);
 
     return (
         <ThemeProvider theme={theme}>
@@ -46,6 +68,8 @@ const Quotes = () => {
             <div className="quoteText">
                 <h2>Quote of the day</h2>
                 <p>“Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe</p>
+                {quote}
+                {author}
             </div>
         </div>
           
