@@ -8,6 +8,7 @@ import FocusLock from 'react-focus-lock';
 import {Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
 import treePath from './images/treePath.jpg'
+import backgroundImage from './images/quoteBackground.jpg'
 import axios from "axios";
 
 const Quotes = () => {
@@ -20,7 +21,7 @@ const Quotes = () => {
     useOnClickOutside(node, () => setOpen(false));
 
   useEffect(() => {
-    const options = {
+    const getQuote = {
       method: 'GET',
       url: 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote',
       params: {token: 'ipworld.info'},
@@ -30,8 +31,10 @@ const Quotes = () => {
       }
     };
     
-    axios.request(options).then(function (response) {
+    axios.request(getQuote).then(function (response) {
       console.log(response.data);
+      setQuote(response.data.text);
+      setAuthor(response.data.author);
     }).catch(function (error) {
       console.error(error);
     });
@@ -58,20 +61,12 @@ const Quotes = () => {
             </div>
             </div>
             <div className="quoteWrapper">
-            <div className="quoteContent">
-            </div>
-            <div className="quoteContent">
-            </div>
-            <div>
-                <img src={treePath} style={{opacity:  0.3, objectFit: "contain", position:"relative", zIndex:"-1"}} width="100%" height="100%" alt="trees"/>
-            </div>
-            <div className="quoteText">
+              <img src={backgroundImage} style={{opacity:  0.3, objectFit: "contain", position:"relative", zIndex:"-1"}} width="100%" height="100%" alt="trees"/>
+              <div className="centered">
                 <h2>Quote of the day</h2>
-                <p>“Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe</p>
-                {quote}
-                {author}
-            </div>
-        </div>
+                <p>"{quote}" - {author}</p>
+              </div>
+          </div>
           
         </>
       </ThemeProvider>
