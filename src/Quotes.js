@@ -7,7 +7,6 @@ import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 import {Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
-import treePath from './images/treePath.jpg'
 import backgroundImage from './images/quoteBackground.jpg'
 import axios from "axios";
 
