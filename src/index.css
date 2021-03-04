@@ -51,6 +51,11 @@ body {
   padding-top: 30px;
 }
 
+.aboutMeBio {
+  padding: 1rem;
+  text-align: left;
+}
+
 .quoteBio {
   padding: 30px;
   text-align: left;

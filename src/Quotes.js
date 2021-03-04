@@ -60,6 +60,10 @@ const Quotes = () => {
             </div>
             </div>
             <div className="quoteWrapper">
+              <div className="aboutMeContent">
+              </div>
+              <div className="aboutMeContent">
+              </div>
               <img src={backgroundImage} style={{opacity:  0.3, objectFit: "contain", position:"relative", zIndex:"-1"}} width="100%" height="100%" alt="trees"/>
               <div className="centered">
                 <h2>Quote of the day</h2>

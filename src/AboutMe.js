@@ -45,7 +45,7 @@ const AboutMe = () => {
             </div>
             <div className="aboutMeBio" style={{backgroundColor: "white"}}>
                 <h1>Mark Weber</h1>
-                Resourceful Front End Web Developer with a background in design bringing in-depth knowledge of latest technology trends to produce elegant website design. Experience handling Javascript, HTML and CSS coding to meet organization's front-facing internet needs. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address and maintain website performance.
+                <p>Resourceful Front End Web Developer with a background in design bringing in-depth knowledge of latest technology trends to produce elegant website design. Experience handling Javascript, HTML and CSS coding to meet organization's front-facing internet needs. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address and maintain website performance.</p>
             </div>
         </div>
           
