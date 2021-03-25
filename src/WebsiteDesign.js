@@ -7,8 +7,8 @@ import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 import { Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
-import guitarChordApp from './images/guitarChordApp.jpg'
-import guitarChordStats from './images/guitarChordStats.png'
+import webersLanscaping from './images/webersLanscaping.jpg'
+import landscapingStats from './images/landscapingStats.png'
 
 const WebsiteDesign = () => {
     const [open, setOpen] = useState(false);
@@ -39,14 +39,14 @@ const WebsiteDesign = () => {
             <div className="portfolioWrapper">
             <div className="portfolioLinks">
                 <p>Website Design</p>
-                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
+                <a rel="noopener noreferrer" href='https://webers-landscaping.netlify.app/' target="_blank">
+                    <img src={webersLanscaping} alt="Weber's Landscaping" width={"100%"} />
                 </a>
                 <div className="portfolio_languages_graphic">
-                    <img src={guitarChordStats} alt="Guitar Chord App Stats"/>
+                    <img src={landscapingStats} alt="Weber's Landscaping Site"/>
                 </div>
                 <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
+                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
                 </div>
                 <div className="clearfix"></div>
             </div>

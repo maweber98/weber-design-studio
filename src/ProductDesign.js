@@ -7,12 +7,12 @@ import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 import { Link } from "react-router-dom";
 import logo from './images/WeberDesignLogo.svg'
-import expensifyApp from './images/expensifyApp.jpg'
-import memeApp from './images/memeGeneratorApp.jpg'
-import guitarChordApp from './images/guitarChordApp.jpg'
-import memeAppStats from './images/memeAppStats.png'
-import guitarChordStats from './images/guitarChordStats.png'
-import expenseAppStats from './images/expenseAppStats.png'
+import sublimeLogo from './images/sublimeLogo.png'
+import sublimePackaging from './images/sublimePackaging.jpg'
+import collarCentralLogo from './images/collarCentralLogo.png'
+import petAttirePatterns from './images/petAttirePatterns.jpg'
+import K9ExplorerLogo from './images/K9ExplorerLogo.png'
+import K9ExplorerPackaging from './images/K9ExplorerPackaging.jpg'
 
 const ProductDesign = () => {
     const [open, setOpen] = useState(false);
@@ -42,69 +42,58 @@ const ProductDesign = () => {
             </div>
             <div className="portfolioWrapper">
             <div className="portfolioLinks">
-                <p>K9 Explorer</p>
+                <p>K9 Explorer Logo</p>
                 <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
+                    <img src={K9ExplorerLogo} alt="K9 Explorer Logo" width={"100%"} />
                 </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={guitarChordStats} alt="Guitar Chord App Stats"/>
+                <div className="portfolio_languages_paragraph">
+                    <p>Logo design for new product line.</p>
                 </div>
+            </div>
+            <div className="portfolioLinks">
+                <p>Sublime Logo</p>
+                <a rel="noopener noreferrer" href='https://react-expensify20.herokuapp.com/dashboard' target="_blank">
+                    <img src={sublimeLogo} alt="Sublime Logo" width={"100%"} />
+                </a>
+                <div className="portfolio_languages_paragraph">
+                    <p>Logo design for new product line.</p>
+                </div>
+            </div>
+            <div className="portfolioLinks">
+                <p>Collar Central Logo</p>
+                <a rel="noopener noreferrer" href='https://meme-generator20.herokuapp.com/' target="_blank">
+                    <img src={collarCentralLogo} alt="Collar Central Logo" width={"100%"} />
+                </a>
+                <div className="portfolio_languages_paragraph">
+                    <p>Logo design for new product line.</p>
+                </div>
+            </div>
+            <div className="portfolioLinks">
+                <p>K9 Explorer Packaging</p>
+                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
+                    <img src={K9ExplorerPackaging} alt="K9 Explorer Packaging" width={"100%"} />
+                </a>
                 <div className="portfolio_languages_paragraph">
                     <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
                 </div>
-                <div className="clearfix"></div>
             </div>
             <div className="portfolioLinks">
-                <p>Sublime</p>
-                <a rel="noopener noreferrer" href='https://react-expensify20.herokuapp.com/dashboard' target="_blank">
-                    <img src={expensifyApp} alt="expensify app" width={"100%"} />
+                <p>Sublime Packaging</p>
+                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
+                    <img src={sublimePackaging} alt="Sublime Packaging" width={"100%"} />
                 </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={expenseAppStats} alt="Expense App Stats" />
-                </div>
                 <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, SCSS, HTML</p>
+                    <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
                 </div>
-                <div className="clearfix"></div>
             </div>
             <div className="portfolioLinks">
                 <p>Pet Attire Styles</p>
                 <a rel="noopener noreferrer" href='https://meme-generator20.herokuapp.com/' target="_blank">
-                    <img src={memeApp} alt="meme app" width={"100%"} />
+                    <img src={petAttirePatterns} alt="Pet Attire Patterns" width={"100%"} />
                 </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={memeAppStats} alt="Meme App Stats" />
-                </div>
                 <div className="portfolio_languages_paragraph">
                     <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
                 </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>Collar Central Kiosk</p>
-                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={guitarChordStats} alt="Guitar Chord App Stats"/>
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>Harley-Davidson</p>
-                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={guitarChordStats} alt="Guitar Chord App Stats"/>
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
             </div>
         </div>
           
