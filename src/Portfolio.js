@@ -6,21 +6,10 @@ import { theme } from './theme';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 import { Link } from "react-router-dom";
-import logo from './images/WeberDesignLogo.svg'
-import expensifyApp from './images/expensifyApp.jpg'
-import memeApp from './images/memeGeneratorApp.jpg'
-import guitarChordApp from './images/guitarChordApp.jpg'
-import officeApp from './images/officeApp.jpg'
-import videoSearchApp from './images/videoSearchApp.jpg'
-import indecisionApp from './images/indecisionApp.jpg'
-import typingApp from './images/typingGame.jpg'
-import typingGameStats from './images/typingGameStats.png'
-import indecisionAppStats from './images/indecisionAppStats.png'
-import officeAppStats from './images/officeAppStats.png'
-import memeAppStats from './images/memeAppStats.png'
-import youTubeAppStats from './images/youTubeAppStats.png'
-import guitarChordStats from './images/guitarChordStats.png'
-import expenseAppStats from './images/expenseAppStats.png'
+import logo from './images/WeberDesignLogo.svg';
+import productLogoButton from './images/productLogoButton.svg';
+import websiteDesignButton from './images/websiteDesignButton.svg';
+import spaReactButton from './images/spaReactButton.svg';
 
 const Portfolio = () => {
     const [open, setOpen] = useState(false);
@@ -48,97 +37,33 @@ const Portfolio = () => {
             </FocusLock>
             </div>
             </div>
-            <div className="portfolioWrapper">
+            <div className="portfolioWrapper" paddingTop={"50%"}>
             <div className="portfolioLinks">
-                <p>Guitar Chord App</p>
-                <a rel="noopener noreferrer" href='https://guitar-chord-app21.herokuapp.com/' target="_blank">
-                    <img src={guitarChordApp} alt="guitar chord app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={guitarChordStats} alt="Guitar Chord App Stats"/>
-                </div>
+                {/* <p>Product &amp; Logo Design</p> */}
+                    <Link to="/productdesign">
+                        <img src={productLogoButton} alt="Product and Logo Design" width={"70%"} />
+                    </Link>
                 <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, Node.js, React, React Hooks, CSS, HTML</p>
+                    {/* <p>Product and logo designs</p> */}
                 </div>
-                <div className="clearfix"></div>
             </div>
             <div className="portfolioLinks">
-                <p>Expense Budget App</p>
-                <a rel="noopener noreferrer" href='https://react-expensify20.herokuapp.com/dashboard' target="_blank">
-                    <img src={expensifyApp} alt="expensify app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={expenseAppStats} alt="Expense App Stats" />
-                </div>
+                {/* <p>Website Design</p> */}
+                    <Link to="/websitedesign">
+                        <img src={websiteDesignButton} alt="Website Design" width={"50%"} />
+                    </Link>
                 <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, SCSS, HTML</p>
+                    {/* <p>Website design</p> */}
                 </div>
-                <div className="clearfix"></div>
             </div>
             <div className="portfolioLinks">
-                <p>Meme App</p>
-                <a rel="noopener noreferrer" href='https://meme-generator20.herokuapp.com/' target="_blank">
-                    <img src={memeApp} alt="meme app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={memeAppStats} alt="Meme App Stats" />
-                </div>
+                {/* <p>React Apps</p> */}
+                    <Link to="/reactapps">
+                        <img src={spaReactButton} alt="React Apps" width={"70%"} />
+                    </Link>
                 <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
+                    {/* <p>Single Page Apps built on React framework</p> */}
                 </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>Indecision Game App</p>
-                <a rel="noopener noreferrer" href='https://react-indecision20.herokuapp.com/' target="_blank">
-                    <img src={indecisionApp} alt="indecision app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={indecisionAppStats} alt="Indecision App Stats" />
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, SCSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>The Office Game Quiz App</p>
-                <a rel="noopener noreferrer" href='https://react-office-app21.herokuapp.com/' target="_blank">
-                    <img src={officeApp} alt="office quiz app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={officeAppStats} alt="Office Game Stats" />
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>YouTube Video Search App</p>
-                <a rel="noopener noreferrer" href='https://video-kirch-ff2aa5.netlify.app/' target="_blank">
-                    <img src={videoSearchApp} alt="youtube video search app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={youTubeAppStats} alt="YouTube App Stats" />
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
-            </div>
-            <div className="portfolioLinks">
-                <p>Typing Game App</p>
-                <a rel="noopener noreferrer" href='https://elastic-spence-eb117e.netlify.app/' target="_blank">
-                    <img src={typingApp} alt="Typing Game app" width={"100%"} />
-                </a>
-                <div className="portfolio_languages_graphic">
-                    <img src={typingGameStats} alt="Typing Game Stats" />
-                </div>
-                <div className="portfolio_languages_paragraph">
-                    <p>Languages / Frameworks: JavaScript, React, React Hooks, CSS, HTML</p>
-                </div>
-                <div className="clearfix"></div>
             </div>
         </div>
           

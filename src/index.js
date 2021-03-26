@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './index.css';
 import App from './App';
 import Portfolio from './Portfolio';
+import ReactApps from './ReactApps';
 import ProductDesign from './ProductDesign';
 import LogoDesign from './LogoDesign';
 import WebsiteDesign from './WebsiteDesign';
@@ -15,6 +16,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App} />
+      <Route path="/reactapps" component={ReactApps} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/productdesign" component={ProductDesign} />
       <Route path="/logodesign" component={LogoDesign} />
